@@ -1,0 +1,21 @@
+{
+  "name": "heglau2-proxy",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2026-09-13",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "glaubi.net/heglau2",
+      "zone_name": "glaubi.net"
+    },
+    {
+      "pattern": "glaubi.net/heglau2/*",
+      "zone_name": "glaubi.net"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  }
+}

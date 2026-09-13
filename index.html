@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#eeeeE7" />
+    <meta
+      name="description"
+      content="Heglau. Erde, Handwerk und eine eigene Energie. Entdecke Tanja Keims Keramik und Merkendorfer Kraut in einem neuen Blick aufs Land."
+    />
+    <title>Heglau — Erde. Hände. Eigenes Ding.</title>
+    <link rel="canonical" href="https://glaubi.net/heglau2/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="./assets/fonts/dm-sans-medium.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/kraut-ernte.webp"
+      as="image"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#intro">Zum Inhalt</a>
+    <header class="site-header">
+      <a class="brand" href="#start" aria-label="Heglau – zum Anfang"
+        >h<span aria-hidden="true">↗</span></a
+      >
+      <a class="header-location" href="#besuch"
+        ><span class="status-dot" aria-hidden="true"></span>HEGLAU /
+        MITTELFRANKEN</a
+      >
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#entdecken">Entdecken</a><a href="#handwerk">Handwerk</a
+        ><a href="#kraut">Krautkultur</a>
+      </nav>
+      <a class="header-visit" href="#besuch"
+        >Raus aufs Land <span aria-hidden="true">↗</span></a
+      >
+      <button
+        class="motion-toggle header-motion"
+        type="button"
+        aria-pressed="false"
+        aria-label="Animation pausieren"
+      >
+        <span class="motion-icon" aria-hidden="true">Ⅱ</span
+        ><span class="motion-label">Animation pausieren</span>
+      </button>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="Menü öffnen"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Mobile Navigation"
+        hidden
+      >
+        <a href="#entdecken">Entdecken <span>01</span></a
+        ><a href="#handwerk">Handwerk <span>02</span></a
+        ><a href="#kraut">Krautkultur <span>03</span></a
+        ><a href="#besuch">Raus aufs Land <span>↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="start" aria-labelledby="hero-title">
+        <div class="hero-meta">
+          <p>EIN KLEINER ORT. EINE EIGENE ENERGIE.</p>
+          <span>FRÄNKISCHE WURZELN ↗ NEUE PERSPEKTIVEN</span>
+        </div>
+        <div class="hero-title-row">
+          <h1 id="hero-title">HEGLAU<span class="title-dot">.</span></h1>
+          <div class="hero-aside">
+            <svg class="asterisk" viewBox="0 0 100 100" aria-hidden="true">
+              <path d="M50 0v100M0 50h100M15 15l70 70M15 85l70-70" />
+            </svg>
+            <p>Näher dran.<br />Weiter draußen.</p>
+          </div>
+        </div>
+        <div class="hero-media">
+          <figure class="hero-field photo-frame">
+            <img
+              src="./assets/kraut-ernte.webp"
+              width="1000"
+              height="668"
+              alt="Frisch geerntetes Weißkraut, Blaukraut und Spitzkraut in grünen Erntekisten bei Merkendorfer Kraut"
+              fetchpriority="high"
+            />
+            <figcaption>
+              <span class="photo-label">01 / VOM FELD</span
+              ><span class="photo-credit">Foto: Merkendorfer Kraut</span>
+            </figcaption>
+            <div class="hero-statement" aria-hidden="true">
+              Erde. Hände.<br />Eigenes Ding.
+            </div>
+          </figure>
+          <div class="hero-spine">
+            <span>GUTES KOMMT VON HIER.</span
+            ><a href="#entdecken" aria-label="Heglau entdecken"
+              ><span aria-hidden="true">↓</span></a
+            ><span>SCROLLEN & ENTDECKEN</span>
+          </div>
+          <figure class="hero-pottery photo-frame">
+            <img
+              src="./assets/keramik-farben.webp"
+              width="1200"
+              height="1600"
+              alt="Handgetöpferte Teller, Schalen und Becher in Türkis, Rot, Blau und Grün von Tanja Keim"
+              fetchpriority="high"
+            />
+            <figcaption>
+              <span class="photo-label">02 / AUS ERDE</span
+              ><span class="photo-credit">Foto: Töpferstube Tanja Keim</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hero-bottom">
+          <p>
+            Kein Ort wie jeder andere.<br />Ein neuer Blick auf das, was bleibt.
+          </p>
+          <a href="#entdecken"
+            >Die Geschichten entdecken <span aria-hidden="true">↘</span></a
+          ><span class="edition">91732 / HEGLAU</span>
+        </div>
+      </section>
+
+      <section
+        class="intro section-pad"
+        id="entdecken"
+        aria-labelledby="intro-title"
+      >
+        <p class="eyebrow" id="intro">
+          <span class="mini-cross" aria-hidden="true">+</span> LAND IST, WAS WIR
+          DRAUS MACHEN.
+        </p>
+        <div class="intro-grid">
+          <h2 id="intro-title">
+            Bodenständig.<br />Aber <span>nie still.</span>
+          </h2>
+          <div class="intro-copy">
+            <p>Manche Orte muss man nicht neu erfinden. Nur neu entdecken.</p>
+            <p>
+              In Heglau bei Merkendorf wird aus Ton etwas Bleibendes. Und aus
+              dem, was auf den Feldern wächst, ein Stück fränkischer Esskultur.
+              Zwei Betriebe. Zwei ganz eigene Handschriften.
+            </p>
+            <a class="line-link" href="#handwerk"
+              >Lerne sie kennen <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+        <div class="topic-strip" aria-label="Heglau entdecken">
+          <span>ECHTES HANDWERK</span><span aria-hidden="true">✳</span
+          ><span>GUTE ERDE</span><span aria-hidden="true">✳</span
+          ><span>EIGENER CHARAKTER</span><span aria-hidden="true">↗</span>
+        </div>
+      </section>
+
+      <section class="stories" aria-labelledby="stories-title">
+        <div class="stories-heading section-pad">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> AUS HEGLAU. MIT
+            HALTUNG.
+          </p>
+          <h2 id="stories-title">
+            Zwei Wege.<br /><span>Eine Verbindung.</span>
+          </h2>
+          <p>Es beginnt mit der Erde.<br />Was daraus wird, machen Menschen.</p>
+        </div>
+        <div class="story-grid">
+          <div
+            class="story-visual"
+            aria-label="Einblicke in Handwerk und Krautanbau"
+          >
+            <figure class="story-image is-active" data-story-image="handwerk">
+              <div class="photo-frame">
+                <img
+                  src="./assets/keramik-becher.webp"
+                  width="1600"
+                  height="1200"
+                  loading="lazy"
+                  alt="Drei gesprenkelte Steinzeugbecher mit dunkelgrünem Rand aus Tanja Keims Töpferstube"
+                />
+              </div>
+              <figcaption>
+                <span>01 / TON WIRD CHARAKTER</span
+                ><a
+                  href="https://toepferstube-tanjakeim.de/Toepferarbeiten/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Foto: Töpferstube Tanja Keim ↗</a
+                >
+              </figcaption>
+            </figure>
+            <figure class="story-image" data-story-image="kraut">
+              <div class="photo-frame">
+                <img
+                  src="./assets/kraut-feld.webp"
+                  width="750"
+                  height="562"
+                  loading="lazy"
+                  alt="Krauternte auf dem Feld der Familie Reuter, mit Erntehelfern, Holzkisten und Traktor"
+                />
+              </div>
+              <figcaption>
+                <span>02 / HIER WÄCHST WAS</span
+                ><a
+                  href="https://merkendorfer-kraut.de/krautanbau/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Foto: Merkendorfer Kraut ↗</a
+                >
+              </figcaption>
+            </figure>
+            <div class="visual-index" aria-hidden="true">
+              <span data-visual-index>01</span><i></i><span>02</span>
+            </div>
+          </div>
+          <div class="story-copy-track">
+            <article
+              class="story-chapter"
+              id="handwerk"
+              data-story="handwerk"
+              aria-labelledby="handwerk-title"
+            >
+              <figure class="mobile-story-photo">
+                <div class="photo-frame">
+                  <img
+                    src="./assets/keramik-becher.webp"
+                    width="1600"
+                    height="1200"
+                    loading="lazy"
+                    alt="Drei gesprenkelte Steinzeugbecher mit dunkelgrünem Rand aus Tanja Keims Töpferstube"
+                  />
+                </div>
+                <figcaption>
+                  <a
+                    href="https://toepferstube-tanjakeim.de/Toepferarbeiten/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Foto: Töpferstube Tanja Keim ↗</a
+                  >
+                </figcaption>
+              </figure>
+              <p class="eyebrow">01 — TÖPFERSTUBE TANJA KEIM</p>
+              <h3 id="handwerk-title">
+                Nicht einfach<br />ein Becher.<br /><span>Deiner.</span>
+              </h3>
+              <p>
+                Ein Rand, der sich gut anfühlt. Eine Glasur, die das Licht
+                einfängt. Tanja Keim dreht Steinzeug auf der Töpferscheibe — mit
+                einem Blick für die Details, die ein Alltagsstück besonders
+                machen.
+              </p>
+              <div class="story-facts">
+                <span>VON HAND GEDREHT</span><span>FÜR DEN ALLTAG GEMACHT</span>
+              </div>
+              <a
+                class="button button-lime"
+                href="https://toepferstube-tanjakeim.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tanja Keims Arbeit entdecken
+                <span aria-hidden="true">↗</span></a
+              >
+              <div class="story-note">
+                <span aria-hidden="true">↳</span>
+                <p>
+                  Einfach vorbeischauen.<br /><strong
+                    >Freitags 14–16 Uhr & nach Vereinbarung.</strong
+                  >
+                </p>
+              </div>
+            </article>
+            <article
+              class="story-chapter"
+              id="kraut"
+              data-story="kraut"
+              aria-labelledby="kraut-title"
+            >
+              <figure class="mobile-story-photo">
+                <div class="photo-frame">
+                  <img
+                    src="./assets/kraut-feld.webp"
+                    width="750"
+                    height="562"
+                    loading="lazy"
+                    alt="Krauternte auf dem Feld der Familie Reuter, mit Erntehelfern, Holzkisten und Traktor"
+                  />
+                </div>
+                <figcaption>
+                  <a
+                    href="https://merkendorfer-kraut.de/krautanbau/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Foto: Merkendorfer Kraut ↗</a
+                  >
+                </figcaption>
+              </figure>
+              <p class="eyebrow">02 — MERKENDORFER KRAUT</p>
+              <h3 id="kraut-title">
+                Tief verwurzelt.<br />Ziemlich<br /><span>frisch.</span>
+              </h3>
+              <p>
+                Weißkraut, Blaukraut, Wirsing und Spitzkraut. Familie Reuter
+                baut auf rund zwei Hektar an, erntet mit viel Handarbeit und
+                verarbeitet ihr Weißkraut jede Woche zu frischem Sauerkraut.
+              </p>
+              <div class="story-facts">
+                <span>FAMILIENBETRIEB</span><span>AUS EIGENEM ANBAU</span>
+              </div>
+              <a
+                class="button button-lime"
+                href="https://merkendorfer-kraut.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Merkendorfer Kraut kennenlernen
+                <span aria-hidden="true">↗</span></a
+              >
+              <div class="story-note">
+                <span aria-hidden="true">↳</span>
+                <p>
+                  Direkt vom Betrieb.<br /><strong
+                    >Hofladen in Heglau 8.</strong
+                  >
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="story-footer section-pad">
+          <span>GEMACHT MIT HÄNDEN. GEWACHSEN MIT ZEIT.</span
+          ><a href="#einblicke"
+            >Noch näher ran <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="gallery section-pad"
+        id="einblicke"
+        aria-labelledby="gallery-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DAS DETAIL MACHT DEN UNTERSCHIED.</p>
+            <h2 id="gallery-title">Zum Anfassen nah<span>.</span></h2>
+          </div>
+          <p>
+            Einblicke, direkt von den Betrieben.<br />Antippen und genauer
+            hinsehen.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <button
+              class="gallery-open photo-frame"
+              type="button"
+              data-gallery="0"
+              aria-label="Foto vergrößern: Keramikschalen von Tanja Keim"
+            >
+              <img
+                src="./assets/keramik-schalen.webp"
+                width="1280"
+                height="1600"
+                loading="lazy"
+                alt="Ineinander gestellte Steinzeugschalen mit türkisblauen und ockerfarbenen Spiralen"
+              /><span class="expand-icon" aria-hidden="true">↗</span>
+            </button>
+            <figcaption>
+              <span>GLASUR MIT CHARAKTER</span
+              ><span>Töpferstube Tanja Keim</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <button
+              class="gallery-open photo-frame"
+              type="button"
+              data-gallery="1"
+              aria-label="Foto vergrößern: Ofenform von Tanja Keim"
+            >
+              <img
+                src="./assets/keramik-ofenform.webp"
+                width="1600"
+                height="1200"
+                loading="lazy"
+                alt="Helle handgetöpferte Ofenform mit zwei Griffen und passendem Deckel auf einem Holztisch"
+              /><span class="expand-icon" aria-hidden="true">↗</span>
+            </button>
+            <figcaption>
+              <span>FÜR ALLE TAGE</span><span>Töpferstube Tanja Keim</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <button
+              class="gallery-open photo-frame"
+              type="button"
+              data-gallery="2"
+              aria-label="Foto vergrößern: Hofladen Merkendorfer Kraut"
+            >
+              <img
+                src="./assets/kraut-hofladen.webp"
+                width="1000"
+                height="751"
+                loading="lazy"
+                alt="Eingang des Hofladens Merkendorfer Kraut mit Holzfassade und Blumen"
+              /><span class="expand-icon" aria-hidden="true">↗</span>
+            </button>
+            <figcaption>
+              <span>GUTES DIREKT VOM HOF</span><span>Merkendorfer Kraut</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="visit section-pad"
+        id="besuch"
+        aria-labelledby="visit-title"
+      >
+        <div class="visit-heading">
+          <p class="eyebrow">WENIGER FEED. MEHR FELD.</p>
+          <h2 id="visit-title">Mal raus.<br />Mal <span>hierher.</span></h2>
+          <a
+            class="visit-arrow"
+            href="https://www.openstreetmap.org/?mlat=49.18222&mlon=10.70500#map=15/49.18222/10.70500"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Heglau auf OpenStreetMap öffnen"
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="visit-grid">
+          <div class="visit-place">
+            <span class="location-symbol" aria-hidden="true">⊕</span>
+            <h3>Heglau bei Merkendorf.</h3>
+            <p>91732 Merkendorf<br />Mittelfranken · Bayern</p>
+            <a
+              class="line-link"
+              href="https://www.openstreetmap.org/?mlat=49.18222&mlon=10.70500#map=15/49.18222/10.70500"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Auf der Karte öffnen <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="visit-business">
+            <p class="eyebrow">01 / TÖPFERSTUBE TANJA KEIM</p>
+            <h3>Freitag. Dein Termin<br />mit dem Handwerk.</h3>
+            <dl>
+              <div>
+                <dt>Freitag</dt>
+                <dd>14–16 Uhr</dd>
+              </div>
+              <div>
+                <dt>Weitere Termine</dt>
+                <dd>nach Vereinbarung</dd>
+              </div>
+            </dl>
+            <a
+              class="line-link"
+              href="https://toepferstube-tanjakeim.de/KONTAKT/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Kontakt zur Töpferstube <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="visit-business">
+            <p class="eyebrow">02 / HOFLADEN · HEGLAU 8</p>
+            <h3>Ein Stück Heglau.<br />Zum Mitnehmen.</h3>
+            <dl>
+              <div>
+                <dt>Montag–Freitag</dt>
+                <dd>8–17 Uhr</dd>
+              </div>
+              <div>
+                <dt>Samstag</dt>
+                <dd>8–12 Uhr</dd>
+              </div>
+            </dl>
+            <a
+              class="line-link"
+              href="https://merkendorfer-kraut.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Zum Hofladen <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <p class="visit-update">
+          Öffnungszeiten laut den Websites der Betriebe · geprüft am 14.09.2026.
+          Aktuelle Hinweise bitte vor dem Besuch dort nachsehen.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer section-pad">
+      <div class="footer-top">
+        <a href="#start" aria-label="Heglau – zurück nach oben"
+          >HEGLAU<span>↗</span></a
+        >
+        <p>Kleiner Ort.<br />Bleibt im Kopf.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>Ein unabhängiger Blick auf Heglau.</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          <span class="motion-icon" aria-hidden="true">Ⅱ</span
+          ><span class="motion-label">Animation pausieren</span></button
+        ><button class="line-link" type="button" data-open-sources>
+          Quellen & Bildnachweise <span aria-hidden="true">↗</span></button
+        ><a href="#start">Nach oben ↑</a>
+      </div>
+      <p class="motion-explanation" hidden>
+        Animation ist aufgrund deiner Systemeinstellung ausgeschaltet.
+      </p>
+    </footer>
+    <dialog
+      id="gallery-dialog"
+      class="gallery-dialog"
+      aria-labelledby="gallery-caption"
+    >
+      <button
+        class="dialog-close"
+        type="button"
+        aria-label="Bildansicht schließen"
+      >
+        ×
+      </button>
+      <p class="gallery-status" role="status" hidden></p>
+      <figure>
+        <img class="gallery-large" alt="" />
+        <figcaption id="gallery-caption"></figcaption>
+      </figure>
+      <div class="gallery-controls">
+        <button type="button" data-gallery-prev aria-label="Vorheriges Bild">
+          ←</button
+        ><span data-gallery-count aria-live="polite"></span
+        ><button type="button" data-gallery-next aria-label="Nächstes Bild">
+          →
+        </button>
+      </div>
+    </dialog>
+    <dialog
+      id="sources-dialog"
+      class="sources-dialog"
+      aria-labelledby="sources-title"
+    >
+      <button class="dialog-close" type="button" aria-label="Quellen schließen">
+        ×
+      </button>
+      <div class="dialog-content">
+        <p class="eyebrow">TRANSPARENT. BIS ZUR QUELLE.</p>
+        <h2 id="sources-title">Von hier<br />kommen die Bilder.</h2>
+        <p>
+          Dieses unabhängige Dorfporträt ist keine offizielle Website der Stadt
+          oder der gezeigten Betriebe.
+        </p>
+        <h3>Originalfotografie</h3>
+        <p>
+          Die Fotos der Keramiken stammen von der
+          <a
+            href="https://toepferstube-tanjakeim.de/Toepferarbeiten/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Töpferstube Tanja Keim</a
+          >. Die Fotos von Kraut, Ernte und Hofladen stammen von
+          <a
+            href="https://merkendorfer-kraut.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Merkendorfer Kraut</a
+          >. Bildrechte verbleiben bei den jeweiligen Rechteinhabern. Für diese
+          Gestaltung wurden die Originalfotos lokal gespeichert und technisch
+          verkleinert; es wurden keine Motive generiert.
+        </p>
+        <h3>Informationen & Stand</h3>
+        <p>
+          Angaben zum Handwerk, Krautanbau, Hofladen und den Öffnungszeiten
+          wurden am 14. September 2026 auf den Websites der beiden Betriebe
+          geprüft. Die Seiten zum Krautfest enthalten ältere
+          Veranstaltungshinweise; deshalb nennen wir hier keinen aktuellen
+          Termin.
+        </p>
+        <p>
+          Die Ortslage basiert auf dem
+          <a
+            href="https://de.wikipedia.org/wiki/Heglau"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Artikel Heglau</a
+          >
+          (geprüft am 13.09.2026; Mitwirkende siehe Versionsgeschichte,
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >CC BY-SA 4.0</a
+          >). Die Texte dieses Porträts wurden neu formuliert.
+        </p>
+        <h3>Datenschutz & Lizenzen</h3>
+        <p>
+          Alle Bilder und Schriften werden mit der Website ausgeliefert. Keine
+          Cookies, kein Tracking, keine eingebetteten Drittanbieter. Externe
+          Websites werden erst beim Öffnen ihrer Links aufgerufen. Der
+          Hostinganbieter verarbeitet technisch notwendige Verbindungsdaten.
+        </p>
+        <p>
+          Hinweise zu Software und Schriftarten:
+          <a href="./THIRD-PARTY-NOTICES.txt">Drittlizenzen</a>.
+        </p>
+      </div>
+    </dialog>
+    <noscript
+      ><p class="noscript-note">
+        Alle Geschichten und externen Links sind ohne JavaScript zugänglich.
+        Originalfotos:
+        <a href="https://toepferstube-tanjakeim.de/Toepferarbeiten/"
+          >Töpferstube Tanja Keim</a
+        >
+        und <a href="https://merkendorfer-kraut.de/">Merkendorfer Kraut</a>;
+        Bildrechte bei den jeweiligen Rechteinhabern. Öffnungszeiten geprüft am
+        14.09.2026. Keine Cookies und kein Tracking.
+        <a href="./THIRD-PARTY-NOTICES.txt">Drittlizenzen</a>.
+      </p></noscript
+    >
+  </body>
+</html>

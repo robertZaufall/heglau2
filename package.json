@@ -1,0 +1,16 @@
+{
+  "name": "heglau-neu",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A photographic editorial scroll journey through Heglau. Original local business photos; no runtime dependencies.",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/server.mjs --dist",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

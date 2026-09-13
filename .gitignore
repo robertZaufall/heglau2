@@ -1,0 +1,17 @@
+# Generated builds, dependencies and media masters
+/dist/
+node_modules/
+/output/
+
+# Local environment and tooling
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.DS_Store
+
+# Local Cloudflare account selection and tooling
+/wrangler.jsonc
+/.wrangler/
+/.playwright-cli/

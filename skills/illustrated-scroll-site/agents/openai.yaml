@@ -1,0 +1,4 @@
+interface:
+  display_name: "Illustrated Scroll Site"
+  short_description: "Editorial scroll stories with real photos or illustrations"
+  default_prompt: "Use $illustrated-scroll-site to build a distinctive editorial scroll website from verified sources, choosing original photography or illustration to match the brief."

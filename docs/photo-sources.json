@@ -1,0 +1,93 @@
+[
+  {
+    "file": "kraut-ernte.webp",
+    "source": "https://merkendorfer-kraut.de/wp-content/uploads/2022/03/krautanbau02.jpg",
+    "sourcePage": "https://merkendorfer-kraut.de/krautanbau/",
+    "width": 1000,
+    "height": 668,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Merkendorfer Kraut",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 1000,
+    "originalHeight": 668
+  },
+  {
+    "file": "kraut-feld.webp",
+    "source": "https://merkendorfer-kraut.de/wp-content/uploads/2022/03/unternehmen03-e2025d77.jpg",
+    "sourcePage": "https://merkendorfer-kraut.de/krautanbau/",
+    "width": 750,
+    "height": 562,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Merkendorfer Kraut",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 750,
+    "originalHeight": 562
+  },
+  {
+    "file": "kraut-hofladen.webp",
+    "source": "https://merkendorfer-kraut.de/wp-content/uploads/2022/03/hofladen101.jpg",
+    "sourcePage": "https://merkendorfer-kraut.de/unternehmen-2/",
+    "width": 1000,
+    "height": 751,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Merkendorfer Kraut",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 1000,
+    "originalHeight": 751
+  },
+  {
+    "file": "keramik-farben.webp",
+    "source": "https://toepferstube-tanjakeim.de/.cm4all/uproc.php/0/Toepferarbeiten-Bildergalerie-20250929/Toepferstube-Heglau-21.jpg?_=1999623ddf8",
+    "sourcePage": "https://toepferstube-tanjakeim.de/Toepferarbeiten/",
+    "width": 1200,
+    "height": 1600,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Töpferstube Tanja Keim",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 3024,
+    "originalHeight": 4032
+  },
+  {
+    "file": "keramik-becher.webp",
+    "source": "https://toepferstube-tanjakeim.de/.cm4all/uproc.php/0/Toepferarbeiten-Bildergalerie-20250929/Toepferstube-Heglau-04.JPG?_=1999624137f",
+    "sourcePage": "https://toepferstube-tanjakeim.de/Toepferarbeiten/",
+    "width": 1600,
+    "height": 1200,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Töpferstube Tanja Keim",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 2048,
+    "originalHeight": 1536
+  },
+  {
+    "file": "keramik-ofenform.webp",
+    "source": "https://toepferstube-tanjakeim.de/.cm4all/uproc.php/0/Toepferarbeiten-Bildergalerie-20250929/Toepferstube-Heglau-10.jpg?_=19996240705",
+    "sourcePage": "https://toepferstube-tanjakeim.de/Toepferarbeiten/",
+    "width": 1600,
+    "height": 1200,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Töpferstube Tanja Keim",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 4032,
+    "originalHeight": 3024
+  },
+  {
+    "file": "keramik-schalen.webp",
+    "source": "https://toepferstube-tanjakeim.de/.cm4all/uproc.php/0/Toepferarbeiten-Bildergalerie-20250929/Toepferstube-Heglau-05.JPG?_=1999624105d",
+    "sourcePage": "https://toepferstube-tanjakeim.de/Toepferarbeiten/",
+    "width": 1280,
+    "height": 1600,
+    "retrieved": "2026-09-14",
+    "treatment": "EXIF orientation, downsize without upscaling, WebP encoding. No generated content.",
+    "credit": "Töpferstube Tanja Keim",
+    "rights": "Source publisher credited; no open license asserted.",
+    "originalWidth": 1440,
+    "originalHeight": 1800
+  }
+]
