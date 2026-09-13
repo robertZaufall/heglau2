@@ -61,7 +61,7 @@ When publication is requested or already authorized, first resolve the destinati
 
 ## GitHub Pages and domain routing
 
-The [Pages workflow](.github/workflows/static.yml) tests, builds and uploads only `dist/` on pushes to `master` or manual dispatch. Pages uses GitHub Actions as its build source.
+The [Pages workflow](.github/workflows/static.yml) tests, builds and uploads only `dist/` on pushes to `master` or manual dispatch. Pages uses GitHub Actions as its build source. The `github-pages` environment permits deployments from `master`; GitHub may initially create a `main` policy when Pages is enabled before the first push.
 
 [cloudflare/worker.js](cloudflare/worker.js) owns this site's streaming proxy. [tests/proxy.test.js](tests/proxy.test.js) covers path isolation, credential stripping, queries, redirects, range responses, HEAD and upstream errors. Keep the fixed origin and narrow route boundaries. `/heglau2` redirects to `/heglau2/`; use the slash form for URLs with query parameters because Cloudflare exact routes include the query string when matching. Do not broaden the route to `/heglau2*`.
 
