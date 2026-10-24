@@ -68,7 +68,7 @@ When publication is requested or already authorized, first resolve the destinati
 
 ## GitHub Pages and domain routing
 
-The retained [Pages workflow](.github/workflows/static.yml) tests, builds and uploads only `dist/` on pushes to `master` or manual dispatch. It is a potential publication trigger, not evidence that the website is currently published. Before an explicitly requested push, reconcile that trigger and the actual Pages settings with the owner’s unpublishing decision. Do not dispatch it or re-enable Pages for documentation maintenance.
+The retained [Pages workflow](.github/workflows/static.yml) is disabled in GitHub Actions (`disabled_manually`) to preserve the unpublished state during source pushes. Its YAML still defines deployment on pushes to `master` or manual dispatch if re-enabled. Before an explicitly requested push, verify that it remains disabled. Re-enabling it or restoring Pages requires explicit publication authorization; documentation maintenance does not authorize either.
 
 [cloudflare/worker.js](cloudflare/worker.js) retains the source of the removed streaming proxy for recovery. [tests/proxy.test.js](tests/proxy.test.js) covers path isolation, credential stripping, queries, redirects, range responses, HEAD and upstream errors. Keep the fixed origin and narrow route boundaries. `/heglau2` redirects to `/heglau2/`; use the slash form for URLs with query parameters because Cloudflare exact routes include the query string when matching. Do not broaden the route to `/heglau2*`.
 
