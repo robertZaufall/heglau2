@@ -1,6 +1,6 @@
 # Heglau — Erde. Hände. Eigenes Ding.
 
-[Die Website besuchen](https://glaubi.net/heglau2/)
+Die Website ist nicht mehr veröffentlicht. Der Quellcode bleibt für die lokale Nutzung erhalten.
 
 Ein neuer Blick auf einen kleinen Ort in Mittelfranken. Dieses unabhängige Dorfporträt erzählt von zwei Betrieben, die Heglau ihren eigenen Charakter geben: der Töpferstube Tanja Keim und dem Familienbetrieb Merkendorfer Kraut.
 

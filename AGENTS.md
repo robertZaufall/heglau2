@@ -4,7 +4,14 @@
 
 This directory is the independent photographic redesign of Heglau. It uses plain German-language HTML, CSS and JavaScript. Keep README focused on the visitor experience; maintain technical instructions here. The reusable workflow is [skills/illustrated-scroll-site/SKILL.md](skills/illustrated-scroll-site/SKILL.md).
 
-The public site is `https://glaubi.net/heglau2/`, hosted by GitHub Pages from `robertZaufall/heglau2` on `master`. The `heglau2-proxy` Cloudflare Worker maps only `glaubi.net/heglau2` and `glaubi.net/heglau2/*` to `https://robertzaufall.github.io/heglau2/`. The older Heglau site and its Worker are separate.
+Read [shared infrastructure rules](../infrastructure/AGENTS.md) and the
+[project infrastructure note](../infrastructure/heglau2.md).
+
+The owner has unpublished this website. Both the former GitHub Pages origin
+`https://robertzaufall.github.io/heglau2/` and `https://glaubi.net/heglau2/` return
+404 in a fresh browser. The hub card, `heglau2-proxy` Worker and its routes are
+removed. Keep source and local preview available; do not restore publication
+without an explicit request. The older Heglau site is separate.
 
 | Path                              | Responsibility                                                        |
 | --------------------------------- | --------------------------------------------------------------------- |
@@ -61,10 +68,10 @@ When publication is requested or already authorized, first resolve the destinati
 
 ## GitHub Pages and domain routing
 
-The [Pages workflow](.github/workflows/static.yml) tests, builds and uploads only `dist/` on pushes to `master` or manual dispatch. Pages uses GitHub Actions as its build source. The `github-pages` environment permits deployments from `master`; GitHub may initially create a `main` policy when Pages is enabled before the first push.
+The retained [Pages workflow](.github/workflows/static.yml) tests, builds and uploads only `dist/` on pushes to `master` or manual dispatch. It is a potential publication trigger, not evidence that the website is currently published. Before an explicitly requested push, reconcile that trigger and the actual Pages settings with the owner’s unpublishing decision. Do not dispatch it or re-enable Pages for documentation maintenance.
 
-[cloudflare/worker.js](cloudflare/worker.js) owns this site's streaming proxy. [tests/proxy.test.js](tests/proxy.test.js) covers path isolation, credential stripping, queries, redirects, range responses, HEAD and upstream errors. Keep the fixed origin and narrow route boundaries. `/heglau2` redirects to `/heglau2/`; use the slash form for URLs with query parameters because Cloudflare exact routes include the query string when matching. Do not broaden the route to `/heglau2*`.
+[cloudflare/worker.js](cloudflare/worker.js) retains the source of the removed streaming proxy for recovery. [tests/proxy.test.js](tests/proxy.test.js) covers path isolation, credential stripping, queries, redirects, range responses, HEAD and upstream errors. Keep the fixed origin and narrow route boundaries. `/heglau2` redirects to `/heglau2/`; use the slash form for URLs with query parameters because Cloudflare exact routes include the query string when matching. Do not broaden the route to `/heglau2*`.
 
 `wrangler.jsonc` holds ignored local account configuration. Start from [wrangler.example.jsonc](wrangler.example.jsonc) when absent. With a current Wrangler v4, verify `wrangler whoami`, run `wrangler deploy --dry-run`, then deploy after authorized routing changes and inspect `wrangler deployments status --json`. Ordinary site releases only need the Pages workflow. Never publish local routing snapshots or credential material.
 
-After publication, verify the bare-path redirect, slash URL, nested and missing assets, byte ranges, and local/Pages/public SHA-256 parity. Compare local HEAD, `origin/master` and the remote branch. The user-facing route card belongs in `../glaubinet/index.html`; preserve its existing Heglau card.
+After publication, verify the bare-path redirect, slash URL, nested and missing assets, byte ranges, and local/Pages/public SHA-256 parity. Compare local HEAD, `origin/master` and the remote branch. Any newly authorized route card belongs in `../glaubinet/index.html`; do not restore either retired Heglau card incidentally.
